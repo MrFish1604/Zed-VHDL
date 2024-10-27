@@ -1,0 +1,4 @@
+name = "VHDL"
+grammar = "vhdl"
+path_suffixes = ["vhd", "vhdl"]
+line_comments = ["--"]
