@@ -1,20 +1,22 @@
 (comment)@comment
 (identifier)@variable
 name:(identifier)@function
+
 (integer_decimal)@number
+(character_literal)@string
+(string_literal)@string
+
 (type_mark)@type
 at_end:(simple_name)@function
 (mode)@keyword
+
 (descending_range
     "downto"@keyword)
 (ascending_range
     "to"@keyword)
 
 (alias_declaration
-    [
-        "alias"
-        "is"
-    ]@keyword)
+    "alias"@keyword)
 
 (library_clause
     "library"@keyword
@@ -71,20 +73,65 @@ operator:[
     "<="
 ]@operator
 
+; Structural keywords
+[
+    "component"
+    "port"
+    "signal"
+    "variable"
+    "constant"
+    "type"
+    "subtype"
+    "array"
+    "record"
+    "access"
+    "procedure"
+    "function"
+    "package"
+    "is"
+    "entity"
+    "architecture"
+    "of"
+    "begin"
+    "end"
+]@keyword
 
-(entity_declaration
-    "entity"@keyword
-    "is"@keyword
-    "end"@keyword)
+; Conditional keywords
+[
+    "if"
+    "then"
+    "else"
+    "elsif"
+    "case"
+    "when"
+    "others"
+]@keyword
 
-(architecture_body
-    [
-        "architecture"
-        "of"
-        "is"
-        "begin"
-        "end"
-    ]@keyword)
+; Loop keywords
+[
+    "loop"
+    "while"
+    "for"
+    "next"
+    "exit"
+]@keyword
+
+; Misc keyword
+[
+    "return"
+    "report"
+    "wait"
+    "with"
+    "select"
+    "postponed"
+    "process"
+    "generate"
+    "block"
+    "configuration"
+    "pure"
+    "impure"
+]@keyword
+
 
 (generic_clause
     "generic"@keyword
@@ -94,12 +141,12 @@ operator:[
     "port"@keyword)
 
 ; Punctuation
-; [
-;     "."
-;     ","
-; ]@punctuation.delimiter
+[
+    "."
+    ","
+]@punctuation.delimiter
 
-; [
-;     "("
-;     ")"
-; ]@punctuation.bracket
+[
+    "("
+    ")"
+]@punctuation.bracket
