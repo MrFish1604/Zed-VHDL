@@ -1,7 +1,35 @@
 {
   "Entity Declaration": {
     "prefix": "entity",
-    "body": ["entity $1 is", "  port (", "    $2", "  );", "end entity $1;"],
+    "body": ["entity $1 is", "\t$2", "end $1;"],
     "description": "Entity Declaration"
+  },
+
+  "Architecture Declaration": {
+    "prefix": "architecture",
+    "body": ["architecture $1 of $2 is", "\t$3", "begin", "\t$4", "end $1;"],
+    "description": "Architecture Declaration"
+  },
+
+  "Function Declaration": {
+    "prefix": "function",
+    "body": [
+      "$1 function $2($3) return $4 is",
+      "\t$5",
+      "begin",
+      "\t$6",
+      "end function;"
+    ],
+    "description": "Function Declaration"
+  },
+
+  "Import ieee": {
+    "prefix": "ieee",
+    "body": [
+      "library ieee;",
+      "use ieee.std_logic_1164.all;",
+      "use.ieee.numeric_std.all;"
+    ],
+    "description": "Import most used ieee libraries"
   }
 }
