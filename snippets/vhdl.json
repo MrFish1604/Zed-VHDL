@@ -1,0 +1,7 @@
+{
+  "Entity Declaration": {
+    "prefix": "entity",
+    "body": ["entity $1 is", "  port (", "    $2", "  );", "end entity $1;"],
+    "description": "Entity Declaration"
+  }
+}
