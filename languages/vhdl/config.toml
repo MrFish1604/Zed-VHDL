@@ -8,3 +8,6 @@ brackets = [
     { start = "'", end = "'", close = true, newline = false },
     { start = "{", end = "}", close = true, newline = true },
 ]
+
+increase_indent_pattern = "begin|then|loop|entity|architecture"
+decrease_indent_pattern = "begin|end"
