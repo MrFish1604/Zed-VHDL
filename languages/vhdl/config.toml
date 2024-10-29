@@ -1,7 +1,7 @@
 name = "VHDL"
 grammar = "vhdl"
 path_suffixes = ["vhd", "vhdl"]
-line_comments = ["--"]
+line_comments = ["-- "]
 brackets = [
     { start = "(", end = ")", close = true, newline = true },
     { start = "\"", end = "\"", close = true, newline = false },
@@ -9,5 +9,5 @@ brackets = [
     { start = "{", end = "}", close = true, newline = true },
 ]
 
-increase_indent_pattern = "begin|then|loop|entity|architecture"
-decrease_indent_pattern = "begin|end"
+increase_indent_pattern = "begin|then|(for|while).*loop|entity|architecture|^\\s*else|^\\s*elsif|^\\s*component"
+decrease_indent_pattern = "begin|end|^\\s*else|^\\s*elsif"

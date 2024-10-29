@@ -28,8 +28,19 @@
     "body": [
       "library ieee;",
       "use ieee.std_logic_1164.all;",
-      "use.ieee.numeric_std.all;"
+      "use ieee.numeric_std.all;"
     ],
     "description": "Import most used ieee libraries"
+  },
+
+  "Port clause": {
+    "prefix": "port",
+    "body": ["port($1);"],
+    "description": "Port clause"
+  },
+  "Generic Clause": {
+    "prefix": "generic",
+    "body": ["generic($1);"],
+    "description": "Generic Clause"
   }
 }

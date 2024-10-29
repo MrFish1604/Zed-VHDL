@@ -1,10 +1,10 @@
 id = "vhdl"
 name = "VHDL"
-version = "0.0.1"
+version = "0.0.2"
 schema_version = 1
 authors = ["Matthias Cabillot <matthias.cabillot@telecomnancy.net>"]
 description = "Add VHDL support to Zed"
-repository = ""
+repository = "https://github.com/MrFish1604/Zed-VHDL"
 
 [grammars.vhdl]
 # repository = "https://github.com/jpt13653903/tree-sitter-vhdl" # More recent but not working

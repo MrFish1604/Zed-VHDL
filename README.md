@@ -6,6 +6,7 @@ This extension provides VHDL language support for [Zed](https://zed.dev).
 - [x] Auto indentation
 - [ ] Code snippets
 - [ ] Language server
+- [ ] Code outline
 
 ## Installation from source (only way for now)
 1. **Clone** this repository
