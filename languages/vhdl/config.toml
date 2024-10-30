@@ -9,5 +9,5 @@ brackets = [
     { start = "{", end = "}", close = true, newline = true },
 ]
 
-increase_indent_pattern = "begin|then|(for|while).*loop|entity|architecture|^\\s*else|^\\s*elsif|^\\s*component"
-decrease_indent_pattern = "begin|end|^\\s*else|^\\s*elsif"
+increase_indent_pattern = "begin|then|(for|while).*loop|entity|architecture|^\\s*else|^\\s*elsif|^\\s*component|process(\\(.*\\))?$|^\\s*case"
+decrease_indent_pattern = "^\\s*begin|end|^\\s*else|^\\s*elsif"
