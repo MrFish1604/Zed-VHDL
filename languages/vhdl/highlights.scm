@@ -6,6 +6,7 @@ component:(simple_name)@variable.special
 (integer_decimal)@number
 (character_literal)@string
 (string_literal)@string
+(bit_string_literal)@string
 (open)@keyword
 
 (type_mark)@type
