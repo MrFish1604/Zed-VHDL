@@ -42,5 +42,11 @@
     "prefix": "generic",
     "body": ["generic($1);"],
     "description": "Generic Clause"
+  },
+
+  "std_logic_vector": {
+    "prefix": "slv",
+    "body": ["std_logic_vector"],
+    "desctiption": "std_logic_vector as slv"
   }
 }

@@ -19,7 +19,7 @@ entity:(simple_name)@emphasis
 ([
     (identifier)
     (simple_name)] @constant
-  (#match? @constant "^[A-Z_0-9]*$"))
+  (#match? @constant "^[A-Z_0-9]*$|^true$|^false$|"))
 
 ; Match most used types
 ((simple_name)@type
@@ -162,6 +162,8 @@ operator:[
     "configuration"
     "pure"
     "impure"
+    "null"
+    "all"
 ]@keyword
 
 
